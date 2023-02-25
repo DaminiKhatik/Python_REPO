@@ -1,0 +1,2 @@
+Keep in mind that without using a with statement, you might accidentally keep the ﬁle open in case an unexpected exception arises like so:
+in_file = open('myfile.txt', 'r') raise Exception("oops") in_file.close()  # This will never be called 

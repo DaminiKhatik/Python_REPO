@@ -1,0 +1,66 @@
+# Format literals (f-string)
+
+
+name = 'damini'
+age = 22
+print(f"Hello, My name is {name} and I'm {age} years old.")
+
+
+
+# Float formatting
+x = 211911461911461819112146
+y = 2**70
+z = x / y
+
+print("{0:.5f}".format(z))
+
+
+#Named placeholders
+data = {'first': 'Hodor', 'last': 'Hodoreee!'} 
+a='{first} {last}'.format(**data) 
+print(a)
+
+
+#String formatting with datetime
+import datetime
+print(f'Current date/time: {datetime.datetime.now()}')
+
+# Formatting Numerical Values
+print('{:.5f}'.format(8.0))#8.00000
+print('{:.0f}'.format(8.9))#9
+print('{:.2f}'.format(5.39120))#5.40
+
+
+# Nested formatting
+data = ["a", "bbbbbbb", "ccc"] 
+m = max(map(len, data)) 
+for d in data:
+ print('{:>{}}'.format(d, m)) 
+ # a 
+ #bbbbbbb    
+ # #ccc 
+
+# Format using Getitem and Getattr
+class Person (object):    
+ first = 'Zaphod'    
+ last = 'Beeblebrox'
+ a='{p.first} {p.last}'.format(p=Person()) 
+ print(a)
+ 
+ 
+ #Padding 
+str = "helllllooooo"
+# Printing the output of ljust() method
+print(str.ljust(20, 'f'))
+
+#truncating string
+my_str = 'i_am_daminikhatik'
+
+result = my_str[:5]
+print(result) 
+
+#Custom formatting for a class
+class Example(object):   
+    def __init__(self,a,b,c):
+        self.a, self.b, self.c = a,b,c
+ 

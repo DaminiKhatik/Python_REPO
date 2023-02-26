@@ -25,3 +25,7 @@ import random
 from random import randint
 a=random.randrange(1000)
 print(a)
+
+
+
+

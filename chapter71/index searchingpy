@@ -1,0 +1,10 @@
+# Getting the index list and tuples: list.index(), tuple.index()
+
+
+alist = [10, 16, 26, 5, 2, 19, 105, 26] 
+a=alist.index(16) 
+print(a)
+
+tuple1 = [10, 16, 26, 5, 2, 19, 105, 26] 
+b=tuple1.index(105) 
+print(b)

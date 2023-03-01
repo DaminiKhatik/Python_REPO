@@ -1,1 +1,4 @@
-<parent><child1 /><child2 /></parent>
+<parent>
+
+<child1 />
+</parent>

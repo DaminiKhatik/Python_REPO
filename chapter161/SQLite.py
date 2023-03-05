@@ -1,16 +1,13 @@
-import psycopg2
-# Establish a connection to the database. # Replace parameter values with database credentials.
-conn = psycopg2.connect(database="testpython",                     
-                        user="postgres",                       
-                        host="localhost",                     
-                        password="abc123",                      
-                        port="5432")
-# Create a cursor. The cursor allows you to execute database 
-cur = conn.cursor()
-# Create a table. Initialise the table name, the column names and data type. 
-cur.execute("""CREATE TABLE FRUITS (id  INT , 
-            fruit_name  TEXT, 
-            color TEXT,
-            price REAL)""")
-conn.commit() 
-conn.close()
+import sqlite3
+connection_obj = sqlite3.connect('student_data.db')
+cursor_obj = connection_obj.cursor()
+table = """ CREATE TABLE student_data (
+            Email VARCHAR(255) NOT NULL,
+            First_Name CHAR(25) NOT NULL,
+            Last_Name CHAR(25),
+            Score INT
+        ); """
+cursor_obj.execute(table)
+ 
+print("Table is Ready")
+connection_obj.close()

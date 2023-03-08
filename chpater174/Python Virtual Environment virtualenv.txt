@@ -1,0 +1,34 @@
+...............Installation................
+
+pip install virtualenv
+
+
+
+
+...............Usage................
+
+Create virtual environment:
+ virtualenv clone
+
+To begin using the virtual environment, it needs to be activated:
+source clone/bin/activate
+
+To exit your virtualenv just type “deactivate”:
+ deactivate 
+
+...............Install a package in your Virtualenv................
+
+source clone/bin/activate 
+ pip install packagename
+
+
+
+............ Other useful virtualenv commands.............
+
+lsvirtualenv : List all of the environments.
+virtualenv
+cdvirtualenv : Navigate into the directory of the currently activated virtual environment, so you can browse its sitepackages, for example.
+
+cdsitepackages : Like the above, but directly into site-packages directory.
+
+lssitepackages : Shows contents of site-packages directory

@@ -1,17 +1,19 @@
  Create virtual environment with virtualenvwrapper
 ................Installing virtualenvwrapper....................
 
-pip install virtualenvwrapper
+$ pip install virtualenvwrapper
+
 
 
 ................Creating a new virtual environment............
 
 mkvirtualenv vir1
 type 
-which python 
-which pip
+$which python 
+w$hich pip
   to see where they're located:
 
 ...............To deactivate the environment..........
 
-run the command deactivate
+run the command 
+$deactivate
